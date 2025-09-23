@@ -71,6 +71,8 @@ public class Handler{
 		String value = String.join(" ", inp.arguments.subList(2, inp.arguments.size()));
 		try{
 			e.set(key,value);
+			entrylist.refresh();
+			entrylist.save();
 			Utils.print("entry upated..", Strings.entry_updated(e,key), "");
 
 		}catch(Exception err){

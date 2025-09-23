@@ -5,7 +5,7 @@ running
 java -cp ".:tdpkg:lib/*" Main
 
 compile as one package
-jar cfm myapp.jar manifest.mf -C . Main.class tdpkg/com/example/*.class
+jar cfm todo.jar manifest.mf -C . Main.class tdpkg/*.class
 
 run package
 java -jar todo.jar
